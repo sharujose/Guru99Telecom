@@ -13,11 +13,12 @@ public class AddCustomerTest extends BaseTest {
 	CustomerIdPage customerIdPageObject;
 
 	@Test()
+	
 	public void addCustomer() throws Exception {
 		landingPageObject = new LandingPage();
 		addCustomerPageObject = landingPageObject.addCustomer();
 		addCustomerPageObject.addFirstName("meenu").backgroundCheckDone().addlasttName("sim")
-				.addemail("meenu@gmail.com").mobile("9090909090").address("test");
+				.addemail("meenu@gmail.com").mobile("9090909090").address("test33");
 		customerIdPageObject = addCustomerPageObject.submit();
 
 		System.out.println(customerIdPageObject.getID());
