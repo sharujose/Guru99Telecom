@@ -1,0 +1,10 @@
+com\telecom\pages\LandingPage.class
+com\telecom\browser\Driver.class
+com\telecom\pages\CustomerIdPage.class
+com\telecom\constants\Constants.class
+com\telecom\browser\DriverManager.class
+com\telecom\pages\AddTariffPage.class
+com\telecom\pages\AddTariffCustomerPage.class
+com\telecom\pages\BasePage.class
+com\telecom\pages\AddCustomerPage.class
+com\telecom\pages\BillPayPage.class
