@@ -1,16 +1,23 @@
 package com.telecom.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import com.telecom.browser.Driver;
 import com.telecom.browser.DriverManager;
 import com.telecom.constants.Constants;
 
+//import projectpages.TestLog4J;
+
 public class BasePage {
+	
+	private static Logger log = LogManager.getLogger(BasePage.class.getName());
 
 	public BasePage() {
 		
@@ -24,6 +31,7 @@ public class BasePage {
 	{
 		explicitwait(element);
 		element.click();
+		log.info("Clicking is successfull on "+ element);
 	}
 
 	public static void explicitwait(WebElement element) {
@@ -53,6 +61,8 @@ public class BasePage {
 		explicitwait(element);
 		element.sendKeys(text);
 		//LogStatus.pass(text + " is entered in to the "+ element);
+		
+		log.info(text + " is entered in to the "+ element);
 	}
 
 	public static void sendkeys(By by, String text)  {
@@ -65,8 +75,10 @@ public class BasePage {
 	public void switchFrame(String frameid,By frameclose) {
 		//frame("flow_close_btn_iframe");
 		DriverManager.getDriver().switchTo().frame(frameid);
+		log.info("switched to frame"+frameid);
 		click(frameclose);
 		DriverManager.getDriver().switchTo().defaultContent();
+		log.info("switched to main window");
 	}
 
 	

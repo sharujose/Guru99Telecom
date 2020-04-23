@@ -20,6 +20,7 @@ public class LandingPage extends BasePage {
 	public AddCustomerPage addCustomer() {
 
 		click(addCustomer);
+		
 		return new AddCustomerPage();
 
 	}

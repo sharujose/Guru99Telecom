@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67822" started-at="2020-04-20T10:14:31Z" finished-at="2020-04-20T10:15:38Z">
+  <suite name="Default suite" duration-ms="164219" started-at="2020-04-23T11:43:07Z" finished-at="2020-04-23T11:45:52Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="67822" started-at="2020-04-20T10:14:31Z" finished-at="2020-04-20T10:15:38Z">
+    <test name="Default test" duration-ms="164219" started-at="2020-04-23T11:43:07Z" finished-at="2020-04-23T11:45:52Z">
       <class name="com.telecom.tests.AddCustomerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.telecom.tests.AddCustomerTest@1d057a39]" name="setUp" is-config="true" duration-ms="19955" started-at="2020-04-20T15:44:31Z" finished-at="2020-04-20T15:44:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.telecom.tests.AddCustomerTest@470f1802]" name="setUp" is-config="true" duration-ms="10843" started-at="2020-04-23T17:13:07Z" finished-at="2020-04-23T17:13:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCustomer()[pri:0, instance:com.telecom.tests.AddCustomerTest@1d057a39]" name="addCustomer" duration-ms="47850" started-at="2020-04-20T15:44:51Z" finished-at="2020-04-20T15:45:38Z">
+        <test-method status="PASS" signature="addCustomer()[pri:0, instance:com.telecom.tests.AddCustomerTest@470f1802]" name="addCustomer" duration-ms="153352" started-at="2020-04-23T17:13:18Z" finished-at="2020-04-23T17:15:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.telecom.tests.AddCustomerTest@1d057a39]" name="wrapUp" is-config="true" duration-ms="0" started-at="2020-04-20T15:45:38Z" finished-at="2020-04-20T15:45:38Z">
+        <test-method status="PASS" signature="wrapUp()[pri:0, instance:com.telecom.tests.AddCustomerTest@470f1802]" name="wrapUp" is-config="true" duration-ms="1" started-at="2020-04-23T17:15:52Z" finished-at="2020-04-23T17:15:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- com.telecom.tests.AddCustomerTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
