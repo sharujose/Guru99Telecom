@@ -39,6 +39,7 @@ public class Driver {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICITWAIT, TimeUnit.SECONDS);
+		
 
 		try {
 			driver.get(prop.getProperty("url"));
@@ -51,7 +52,7 @@ public class Driver {
 	}
 
 	public static void initialize() {
-		if (DriverManager.getDriver() == null)
+		//if (DriverManager.getDriver() == null)
 			try {
 				new Driver();
 			} catch (Exception e) {
